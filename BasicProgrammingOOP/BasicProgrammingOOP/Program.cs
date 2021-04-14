@@ -31,69 +31,27 @@ namespace BasicProgrammingOOP
                             double kg = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Input Your Height (cm)");
                             double cm = Convert.ToDouble(Console.ReadLine());
-                            cm = cm / 100;
-
-                            double result = kg / (cm * cm);
-                            //math.round
-                            if (result < 18.1)
-                            {
-                                Console.WriteLine("Your BMI'S " + Math.Round(result) + " Youre Underwieght");
-                            }
-                            else if (result >= 18.1 && result <= 23.1)
-                            {
-                                Console.WriteLine("Your BMI'S " + result.ToString("F") + " Youre Normal");
-                            }
-                            else if (result >= 23.1 && result <= 28.1)
-                            {
-                                Console.WriteLine("Your BMI'S " + result.ToString("F") + " Youre Overwieght");
-                            }
-                            else
-                            {
-                                Console.WriteLine("Your BMI'S " + result.ToString("F") + " Youre Obesitas");
-                            }
+                            Bmi bmi1 = new Bmi(kg, cm);
                             break;
                         case 2:
                             // code block
                             Console.WriteLine("Please input your name");
                             string name = Console.ReadLine();
-                            int count = 1;
-                            foreach (char el in name)
-                            {
-                                Console.WriteLine($"Huruf ke {count} adalah {el}");
-                                count++;
-                            }
+                            Name name1 = new Name(name);
+                            name1.Spell();
                             break;
                         case 3:
                             // code block
                             Console.WriteLine("Please input your name");
                             name = Console.ReadLine();
-                            //int nameLenght = name.Length;
-                            count = 1;
-                            foreach (char el in name)
-                            {
-                                if (count % 2 != 0)
-                                {
-                                    Console.WriteLine($"Huruf ke {count} adalah {el}");
-                                    count++;
-                                }
-                                else
-                                {
-                                    count++;
-                                }
-                            }
+                            Name name2 = new Name(name);
+                            name2.SpellEven();
                             break;
                         case 4:
                             // code block
                             Console.WriteLine("Input size of array");
                             int size = Convert.ToInt32(Console.ReadLine());
-                            int[] intArray = new int[size];
-                            for (int i = 0; i < size; i++)
-                            {
-                                Console.WriteLine($"Masukkan angka index ke-{i}");
-                                intArray[i] = Convert.ToInt32(Console.ReadLine());
-                            }
-                            int sum = intArray.Sum();
-                            Console.WriteLine($"jumlah dari array adalah {sum}");
+                            Array array1 = new Array(size);
                             break;
                         default:
                             // code block
