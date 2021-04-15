@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Array.cs" />
     <Compile Include="Bmi.cs" />
+    <Compile Include="Maudy.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -37,14 +37,14 @@ namespace BasicProgrammingOOP
                             // code block
                             Console.WriteLine("Please input your name");
                             string name = Console.ReadLine();
-                            Name name1 = new Name(name);
+                            Name name1 = new Maudy(name);
                             name1.Spell();
                             break;
                         case 3:
                             // code block
                             Console.WriteLine("Please input your name");
                             name = Console.ReadLine();
-                            Name name2 = new Name(name);
+                            Name name2 = new Maudy(name);
                             name2.SpellEven();
                             break;
                         case 4:
